@@ -70,6 +70,7 @@ body{
 	width: 5.333333rem;
 	height: 4.586667rem;
 }
+/* 这是猫的头部和轮廓*/
 .mao-head{
 	position: relative;
 	margin:0 auto;
@@ -81,9 +82,8 @@ body{
 	overflow: hidden;
 	z-index: 10;
 }
+/*小喵喵头部右边的花纹*/
 .huawen{
-	/*position: absolute;
-	left: 110px;*/
 	width: 2.4rem;
 	height: 2.133333rem;
 	background: #8D8D8D;
@@ -91,12 +91,13 @@ body{
 	border-radius: 0 0 50% 50%;
 	overflow: hidden;
 }
+/*小喵喵头部左边的花纹*/
 .huawen>div:first-child{
 	height: 2.133333rem;
 	width: 1.2rem;
 	background: #f0ac6b;
 }
-/*耳朵*/
+/*这是猫的左耳朵*/
 .ear{
 	position: absolute;
 	top:-0.08rem;
@@ -106,7 +107,6 @@ body{
 	margin-left:-2.493333rem;
 	border-radius: 0% 0% 0% 0%;
 }
-/*左耳*/
 .ear>div:first-child{
 	position: absolute;
 	left: -0.266667rem;
@@ -132,7 +132,7 @@ body{
 	transform: rotate(30deg);
 	-webkit-transform: rotate(-15deg);
 }
-/*右耳*/
+/*这是猫的右耳朵*/
 .ear>div:last-child{
 	position: absolute;
 	right: -0.333333rem;
@@ -147,6 +147,7 @@ body{
     -o-transform: rotate(15deg);
     transition: transform 1s,left 1s;
 }
+/*猫咪眼睛的盒子*/
 .mao-box .yanjing{
 	position: absolute;
 	top: 2.666667rem;
@@ -157,7 +158,7 @@ body{
 	margin-left: -2.0rem;
 	overflow: hidden;
 }
-/*左眼*/
+/*小猫咪的眼睛*/
 .mao-box .yanquan{
 	position: absolute;
 	width: 1.333333rem;
@@ -185,6 +186,7 @@ body{
 	margin-left: -0.533333rem;
 	transition: margin-top 1s;
 }
+/*小猫咪的红妆*/
 .hong{
 	position: absolute;
 	top:0.453333rem;
@@ -204,7 +206,7 @@ body{
 	top: 0;
 	background: red;
 }
-/*============================*/
+/*花纹*/
 .face-huawen{
 	position: absolute;
 	top: 2.533333rem;
@@ -214,6 +216,7 @@ body{
 	margin-left: -2.533333rem;
 	z-index: 20;
 }
+/*第一红*/
 .face-grain>div:first-child{
 	width: 0.4rem;
 	height: 0.133333rem;
@@ -224,6 +227,7 @@ body{
     -o-transform: rotate(25deg);
     margin-left: 0.266667rem;
 }
+/*第二红*/
 .face-grain >div:nth-child(2){
 	width: 0.266667rem;
 	height: 0.08rem;
@@ -234,6 +238,7 @@ body{
     -o-transform: rotate(25deg);
     margin-left: 0.266667rem;
 }
+/*第三红*/
 .face-grain >div:nth-child(3){
 	width: 0.426667rem;
 	height: 0.133333rem;
@@ -244,6 +249,7 @@ body{
     -o-transform: rotate(25deg);
     margin-left: 0.106667rem;
 }
+/*第四红*/
 .face-grain >div:nth-child(4){
 	width: 0.346667rem;
 	height: 0.266667rem;
@@ -255,6 +261,7 @@ body{
     margin-top: 0.266667rem;
     margin-left: 0.373333rem;
 }
+/*第五红*/
 .face-grain >div:last-child{
 	width: 0.293333rem;
 	height: 0.133333rem;
@@ -266,11 +273,14 @@ body{
 	margin-left: 0.533333rem;
 	margin-top: -0.106667rem;
 }
+/*右边的红妆*/
+
 .huawen-right{
 	float: right;
 	transform: rotateY(180deg);
 	margin-top: -1.133333rem;
 }
+/*小猫咪的鼻子*/
 .bizi{
 	position: absolute;
 	left: 50%;
@@ -287,8 +297,7 @@ body{
 	border-radius: 0% 0% 50% 50%;
 	margin-top: -0.133333rem;
 }
-/*======================================*/
-/*嘴巴*/
+/*接下来是小猫咪的嘴巴*/
 .zuiba-box{
 	position: absolute;
 	left: 50%;
@@ -309,6 +318,7 @@ body{
 	background: #2e2e2e;
 	margin-left: 0.173333rem;
 }
+/*小猫咪嘴巴右边*/
 .zuiba>div:nth-child(2){
 	position: absolute;
 	width: 0.666667rem;
@@ -320,6 +330,7 @@ body{
 	margin-top: -0.346667rem;
 	transition: border-radius 1s;
 }
+/*小猫咪嘴巴右边*/
 .zuiba>div:nth-child(3){
 	position: absolute;
 	width: 0.666667rem;
@@ -331,8 +342,7 @@ body{
 	margin-top: -0.346667rem;
 	transition: border-radius 1s;
 }
-/*======================================================*/
-/*左耳*/
+/*左耳动*/
 .mao.active .ear>div:first-child{
 	left: -0.133333rem;
 	transform: rotate(0deg);
@@ -340,7 +350,7 @@ body{
     -o-transform: rotate(0deg);
     border-radius: 4% 80% 0% 50%;
 }
-/*右耳*/
+/*右耳动*/
 .mao.active .ear>div:last-child{
 	/*right: -10px;*/
 	transform: rotate(0deg);
@@ -402,7 +412,7 @@ body{
 	text-shadow: red 0 0 1.333333rem;
 	transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
 }
-
+/*好了。一只小猫送给你*/
   `;
   
   let container = document.querySelector('#code')
