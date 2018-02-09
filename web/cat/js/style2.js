@@ -395,6 +395,7 @@ body{
   color: hsla(0,0%,0%,0);
   text-shadow: red 0 0 0.066667rem;
   transition: text-shadow 3s cubic-bezier(0, 1, 0, 1);
+  
 }
 
 .mao.active .xin{
