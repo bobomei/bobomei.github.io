@@ -420,10 +420,10 @@ body{
   writeCode();
   function writeCode(){
   	console.log('fff')
-    let n = 200
+    let n = 100
     let id
     id = setTimeout(function run(){
-      n+=3
+      n+=1
       container.innerHTML = code.substring(0,n)
       styleTag.innerHTML = code.substring(0,n)
       container.scrollTop = container.scrollHeight
