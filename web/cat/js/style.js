@@ -1,6 +1,6 @@
 
 var duration = 2
-  var code2 = `*{
+  var code = `*{
 	margin:0;
 	padding: 0;
 }
@@ -411,8 +411,8 @@ body{
     let id
     id = setTimeout(function run(){
       n+=3
-      container.innerHTML = code2.substring(0,n)
-      styleTag.innerHTML = code2.substring(0,n)
+      container.innerHTML = code.substring(0,n)
+      styleTag.innerHTML = code.substring(0,n)
       container.scrollTop = container.scrollHeight
       if(n < code.length){
         id = setTimeout(run, duration)
