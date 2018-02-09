@@ -414,7 +414,7 @@ body{
       container.innerHTML = code2.substring(0,n)
       styleTag.innerHTML = code2.substring(0,n)
       container.scrollTop = container.scrollHeight
-      if(n < code2.length){
+      if(n < code.length){
         id = setTimeout(run, duration)
       }else{
        	cb();
