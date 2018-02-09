@@ -403,7 +403,7 @@ body{
 
   `;
   
-  let container = document.querySelector('#code')
+  let container = document.querySelector('#code2')
   let styleTag = document.querySelector('#styleTag')
   writeCode();
   function writeCode(){
