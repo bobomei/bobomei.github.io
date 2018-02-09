@@ -420,7 +420,7 @@ body{
   writeCode();
   function writeCode(){
   	console.log('fff')
-    let n = 10
+    let n = 100
     let id
     id = setTimeout(function run(){
       n+=1
