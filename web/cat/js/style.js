@@ -407,15 +407,14 @@ body{
   let styleTag = document.querySelector('#styleTag')
   writeCode();
   function writeCode(){
-  	console.log('fff')
     let n = 0
     let id
     id = setTimeout(function run(){
       n+=3
-      container.innerHTML = code.substring(0,n)
-      styleTag.innerHTML = code.substring(0,n)
+      container.innerHTML = code2.substring(0,n)
+      styleTag.innerHTML = code2.substring(0,n)
       container.scrollTop = container.scrollHeight
-      if(n < code.length){
+      if(n < code2.length){
         id = setTimeout(run, duration)
       }else{
        	cb();
